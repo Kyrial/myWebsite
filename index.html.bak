@@ -208,6 +208,80 @@
             </div>
           </div>
         </div>
+		
+		<div class="col">
+		      <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100"><img class="mb-2" src="images/services/ia_icon.png" width="70" height="70" alt="Deep Learning"/></div>
+		<div class="d-flex fw-bolder"><span class="me-auto">Deep Learning</span></div>
+      
+          <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">Python (TensorFlow, Keras)</span></div>
+          </div>
+		  <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">CNN (Convolutional neural network)</span></div>
+          </div>
+		  <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">GAN (Generative adversarial network)</span></div>
+          </div>
+        		  <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">LSTM (Long short-term memory)</span></div>
+          </div>
+		
+		</div>
+		
+		
+		<div class="col ">     
+		<div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="200"><img class="mb-2" src="images/services/computervision_icon.png" width="70" height="70" alt="Computer Vision"/></div>
+        <div class="d-flex fw-bolder"><span class="me-auto">Computer Vision</span></div>
+      
+          <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">Compression et sécurité multimédia</span></div>
+          </div>
+		  <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">Transfert de Style</span></div>
+          </div>
+		  	<div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">OpenCV</span></div>
+          </div>
+        </div>		
+		
+		<div class="col ">
+          
+		  <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="300"><img class="mb-2" src="images/services/3d_icon.png" width="70" height="70" alt="Programmation 3D"/></div>
+			<div class="d-flex fw-bolder"><span class="me-auto">Programmation 3D</span></div>
+			<div class="py-1">
+			<div class="d-flex text-small fw-bolder"><span class="me-auto">Shader</span></div>
+			</div>
+			<div class="py-1">
+			<div class="d-flex text-small fw-bolder"><span class="me-auto">OpenGL</span></div>
+			</div>
+			<div class="py-1">
+			<div class="d-flex text-small fw-bolder"><span class="me-auto">Qt-OpenGL</span></div>
+			</div>
+			<div class="py-1">
+			<div class="d-flex text-small fw-bolder"><span class="me-auto">Manipulation de maillages et nuages de points</span></div>
+			</div>
+			<div class="py-1">
+			<div class="d-flex text-small fw-bolder"><span class="me-auto">Unity</span></div>
+			</div>
+
+            
+          
+        </div>
+		<div class="col ">
+		<div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="400"><img class="mb-2" src="images/services/piano_icon.png" width="70" height="70" alt="Musique"/></div>
+        <div class="d-flex fw-bolder"><span class="me-auto">Musique</span></div>
+      
+          <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">17 ans de piano</span></div>
+          </div>
+		  <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">Compositeur depuis 8ans</span></div>
+          </div>
+		  <div class="py-1">
+            <div class="d-flex text-small fw-bolder"><span class="me-auto">Inspiration par Yann Tiersenn, Final Fantasy, Chrono Cross/Trigger et Golden Sun</span></div>
+          </div>
+		  
+        </div>
       </div>
     </div>
   </div>
@@ -372,7 +446,7 @@
 <div class="section px-3 px-lg-4 pt-5" id="testimonials">
   <div class="container-narrow">
     <div class="text-center mb-5">
-      <h2 class="marker marker-center">Client Testimonials</h2>
+      <h2 class="marker marker-center">Témoignages</h2>
     </div>
     <div class="row"> 
       <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="100">
@@ -477,6 +551,18 @@
         <!-- Make sure to buy a license for the template before removing the line below. Buy license on https://templateflip.com/ -->Design - <a href="https://templateflip.com/" target="_blank">TemplateFlip</a></div>
     </div>
   </div>
+
+<figure>
+    <figcaption>composition pour une GameJam</figcaption>
+    <audio
+        controls
+        src="musics/Assets_Sounds_Battle_Theme.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>	
+	
+	
 </footer></div>
     </div>
     <div id="scrolltop"><a class="btn btn-secondary" href="#top"><span class="icon"><i class="fas fa-angle-up fa-x"></i></span></a></div>
