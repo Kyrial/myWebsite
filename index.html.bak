@@ -218,6 +218,10 @@
 			<div class="d-flex text-small fw-bolder"><span class="me-auto">Manipulation de maillages et nuages de points</span></div>
 			</div>
 			<div class="py-1">
+			<div class="d-flex text-small fw-bolder"><span class="me-auto">Lancée de rayons</span></div>
+			</div>
+
+			<div class="py-1">
 			<div class="d-flex text-small fw-bolder"><span class="me-auto">Unity</span></div>
 			</div>
 
@@ -415,7 +419,7 @@
       </div>
 	  
 	  	  <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-left" data-aos-delay="700">
+        <div class="card mb-3" data-aos="fade-right" data-aos-delay="700">
           <div class="card-header px-3 py-2">
             <div class="d-flex justify-content-between">
               <div>
