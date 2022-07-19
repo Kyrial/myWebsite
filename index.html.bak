@@ -371,8 +371,10 @@
 				
 				Une partie deep learning avec transfert de style.
 			</p>
-			<img src="images/illustrations/harmonisation.jpg" width="480" height="300" alt="harmonie"/>
-			<!--<div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img class="avatar img-fluid mt-2" src="images/avatar.jpg" width="400" height="400" alt="Walter Patterson"/></div>-->
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/hay69oxqXoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			<!--<img src="images/illustrations/harmonisation.jpg" width="480" height="300" alt="harmonie"/>
+			<div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img class="avatar img-fluid mt-2" src="images/avatar.jpg" width="400" height="400" alt="Walter Patterson"/></div>-->
 			
 			<p>Python, Qt, Opengl</p>
           </div>
@@ -482,6 +484,7 @@
     <div class="text-center mb-5">
       <h2 class="marker marker-center">Témoignages</h2>
     </div>
+	<div class="row"> 
 		<div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="100">
         <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Melvin a été très impliqué dans son stage, montrant une
 motivation et un sérieux sans faille. Melvin a également porté un intérêt sincère pour
@@ -499,7 +502,7 @@ j’ai pu travailler précédemment.</span></div>
         </div>
       </div>
 	
-	<div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="100">
+	<div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="200">
         <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">En plus de solides compétences techniques, Melvin m'a surtout impressionné par sa capacité à saisir rapidement des enjeux complexes de disciplines nouvelles pour lui.</span></div>
         <div class="d-flex justify-content-end align-items-end">
           <div class="text-end me-2">
@@ -508,9 +511,9 @@ j’ai pu travailler précédemment.</span></div>
           </div><img class="me-md-3 rounded" src="images/testimonials/nicolas_dibot.jpg" width="96" height="96" alt="nicolas dibot"/>
         </div>
       </div>
-	
+	 </div>
     <div class="row"> 
-      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="200">
+      <div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="300">
         <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Ses expériences ont toujours été menées avec rigueur ; son encadrement a été facilité grâce à sa grande écoute et à sa rapide compréhension des choses.</span></div>
         <div class="d-flex justify-content-end align-items-end">
           <div class="text-end me-2">
@@ -519,7 +522,7 @@ j’ai pu travailler précédemment.</span></div>
           </div><img class="me-md-3 rounded" src="images/testimonials/cedric_lopez.png" width="96" height="96" alt="cedric lopez"/>
         </div>
       </div>
-      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="300">
+      <div class="col-md-6 mb-5" data-aos="fade-left" data-aos-delay="100">
         <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Melvin a été un étudiant très sérieux et très travailleur qui n’a pas hésité à s’investir dans des technologies qu’il ne connaissait pas.</span></div>
         <div class="d-flex justify-content-end align-items-end">
           <div class="text-end me-2">
