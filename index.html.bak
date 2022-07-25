@@ -330,8 +330,8 @@
             </div>
           </div>
           <div class="card-body px-3 py-2">
-            <p>Mon travail se concentre sur l'étude approfondie de l'intelligence artificielle et la corrélation des différentes métriques de la fluence neuronale sur la Beauté.</p>
-            <p>Plus précisément, mon objectif est d'étudier les différentes métriques de fluences (Sparsité, typicalité statistique, consommation énergétique, etc.) afin de générer un modèle permettant de montrer la corrélation entre la beauté et la fluence neuronale.</p>
+            <p>Mon travail s'est concentré sur l'étude approfondie des réseaux de neurones convolutifs et la corrélation des différentes métriques de la fluence neuronale (sensation de facilité dans le cerveau) sur la beauté.</p>
+            <p>Plus précisément, mon objectif a été d'étudier les différentes métriques de fluences (Sparsité, typicalité statistique, consommation énergétique, etc.) afin de générer un modèle permettant de montrer la corrélation entre la beauté et la fluence neuronale.</p>
 			<p>Python, Deep learning, Machine learning</p>
 		  </div>
         </div>
@@ -376,7 +376,7 @@
 			<!--<img src="images/illustrations/harmonisation.jpg" width="480" height="300" alt="harmonie"/>
 			<div class="col-md-5 offset-md-1" data-aos="fade-left" data-aos-delay="100"><img class="avatar img-fluid mt-2" src="images/avatar.jpg" width="400" height="400" alt="Walter Patterson"/></div>-->
 			
-			<p>Python, Qt, Opengl</p>
+			<p>Python, Qt, OpenCV</p>
           </div>
         </div>
       </div>
