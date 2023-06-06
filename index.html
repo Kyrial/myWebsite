@@ -557,7 +557,7 @@ j’ai pu travailler précédemment.</span></div>
 
 //var json3 = $.getJSON("./xml/Experience.json");
 //console.log(json3);
-var json2 = $.getJSON("https://github.com/Kyrial/myWebsite/tree/main/xml/Experience.json");
+/*var json2 = $.getJSON("https://github.com/Kyrial/myWebsite/tree/main/xml/Experience.json");
 console.log(json2);
 $.getJSON("https://github.com/Kyrial/myWebsite/tree/main/xml/Experience.json", function(json) {
     console.log(json); // this will show the info it in firebug console
@@ -566,8 +566,8 @@ $.getJSON("https://github.com/Kyrial/myWebsite/tree/main/xml/Experience.json", f
 	console.log(obj.Temoignages.temoignage[0]);
 	console.log(obj.Temoignages.temoignage[0].resume);
 	
-});
-
+});*/
+/*
 $.getJSON("./xml/Experience.json", function(json) {
     console.log(json); // this will show the info it in firebug console
 	//const obj = JSON.parse(json);
@@ -575,7 +575,63 @@ $.getJSON("./xml/Experience.json", function(json) {
 	console.log(json.Temoignages.temoignage[0]);
 	console.log(json.Temoignages.temoignage[0].resume);
 	
-});
+});*/
+
+function createTestimonialDiv(name, role, imageSrc, quote, delay, classSide) {
+  var colDiv = document.createElement('div');
+  colDiv.className = 'col-md-6 mb-5';
+  colDiv.setAttribute('data-aos', classSide);
+  colDiv.setAttribute('data-aos-delay', delay);
+
+  var innerDiv1 = document.createElement('div');
+  innerDiv1.className = 'd-flex ms-md-3';
+
+  var quoteIconSpan = document.createElement('span');
+  var quoteIcon = document.createElement('i');
+  quoteIcon.className = 'fas fa-2x fa-quote-left';
+  quoteIconSpan.appendChild(quoteIcon);
+
+  var quoteTextSpan = document.createElement('span');
+  quoteTextSpan.className = 'm-2';
+  quoteTextSpan.textContent = quote;
+
+  innerDiv1.appendChild(quoteIconSpan);
+  innerDiv1.appendChild(quoteTextSpan);
+
+  var innerDiv2 = document.createElement('div');
+  innerDiv2.className = 'd-flex justify-content-end align-items-end';
+
+  var innerDiv3 = document.createElement('div');
+  innerDiv3.className = 'text-end me-2';
+
+  var nameDiv = document.createElement('div');
+  nameDiv.className = 'fw-bolder';
+  nameDiv.textContent = name;
+
+  var roleDiv = document.createElement('div');
+  roleDiv.className = 'text-small';
+  roleDiv.textContent = role;
+
+  innerDiv3.appendChild(nameDiv);
+  innerDiv3.appendChild(roleDiv);
+
+  var image = document.createElement('img');
+  image.className = 'me-md-3 rounded';
+  image.src = imageSrc;
+  image.width = 96;
+  image.height = 96;
+  image.alt = name;
+
+  innerDiv2.appendChild(innerDiv3);
+  innerDiv2.appendChild(image);
+
+  colDiv.appendChild(innerDiv1);
+  colDiv.appendChild(innerDiv2);
+
+  return colDiv;
+}
+
+
 
 
 function createDOMHierarchy() {
@@ -598,14 +654,61 @@ function createDOMHierarchy() {
   sectionDiv.appendChild(containerDiv);
 
   // Ajoutez ici le code pour générer les lignes supplémentaires (rows)
+  var rowDiv;
+
+	$.getJSON("./xml/Experience.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+	//const obj = JSON.parse(json);
+	console.log(json.Temoignages);
+	console.log(json.Temoignages.temoignage[0]);
+	console.log(json.Temoignages.temoignage[0].resume);
+	var i = 1;
+	json.Temoignages.forEach(function(element) {
+		var side =   'fade-left';
+		if(i%2==0)
+		  side =   'fade-right';
+		else{
+			rowDiv = document.createElement('div');
+			sectionDiv.className = 'row';
+			containerDiv.appendChild(rowDiv);}
+		
+		console.log(element);
+		testimonialDiv1 = createTestimonialDiv(
+				element.nom, 
+				element.lieu,
+				element.image,
+				element.resume,
+				i*100,
+				side);
+		rowDiv.appendChild(testimonialDiv1);
+		});
+	
+	});
+
+
+
+/*
+var testimonialDiv1 = createTestimonialDiv(
+  'Julien Renoult',
+  'CNRS / Responsable de l’équipe de recherche E3Co',
+  'images/testimonials/julien_2.png',
+  'blabla',
+  '100', 
+  'fade-right'
+);*/
+	//rowDiv.appendChild(testimonialDiv1);
 
   return sectionDiv;
 }
 
+
+
+
 // Exemple d'utilisation :
 var hierarchy = createDOMHierarchy();
 var contentDiv = document.getElementById("content");
-//contentDiv.appendChild(hierarchy);
+contentDiv.appendChild(hierarchy);
+
 </script>
 
 
