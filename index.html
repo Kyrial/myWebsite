@@ -570,10 +570,10 @@ $.getJSON("https://github.com/Kyrial/myWebsite/tree/main/xml/Experience.json", f
 
 $.getJSON("./xml/Experience.json", function(json) {
     console.log(json); // this will show the info it in firebug console
-	const obj = JSON.parse(json);
-	console.log(obj.Temoignages);
-	console.log(obj.Temoignages.temoignage[0]);
-	console.log(obj.Temoignages.temoignage[0].resume);
+	//const obj = JSON.parse(json);
+	console.log(json.Temoignages);
+	console.log(json.Temoignages.temoignage[0]);
+	console.log(json.Temoignages.temoignage[0].resume);
 	
 });
 
