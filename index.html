@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <!-- upto 2 directory depth-->
+Access-Control-Allow-Origin: https://github.com/Kyrial/myWebsite/tree/main/xml
+
 <html lang="fr_FR">
   <head>
     <meta charset="UTF-8">
@@ -17,6 +19,8 @@
     <link href="./css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
     <link href="./css/aos.css?ver=1.2.0" rel="stylesheet">
     <link href="./css/main.css?ver=1.2.0" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	
     <noscript>
       <style type="text/css">
         [data-aos] {
@@ -479,11 +483,25 @@
 
 
 
+
+
 <div class="section px-3 px-lg-4 pt-5" id="testimonials">
   <div class="container-narrow">
     <div class="text-center mb-5">
       <h2 class="marker marker-center">Témoignages</h2>
     </div>
+	<script type="text/javascript">
+	//myXML= document.all("xml\Experience").XMLDocument
+	/*var experiences = null;
+        $(document).ready(function () {
+            $.get("xml\Experience.xml", {}, function (xml){
+              $('Temoignages',xml).each(function(i){
+                 experiences = $(this);
+              });
+            });
+        });
+	console.log(experience);*/
+	</script>
 	<div class="row"> 
 		<div class="col-md-6 mb-5" data-aos="fade-right" data-aos-delay="100">
         <div class="d-flex ms-md-3"><span><i class="fas fa-2x fa-quote-left"></i></span><span class="m-2">Melvin a été très impliqué dans son stage, montrant une
@@ -536,6 +554,62 @@ j’ai pu travailler précédemment.</span></div>
     </div>
   </div>
 </div>
+<script>
+
+//var json3 = $.getJSON("./xml/Experience.json");
+//console.log(json3);
+var json2 = $.getJSON("https://github.com/Kyrial/myWebsite/tree/main/xml/Experience.json");
+console.log(json2);
+$.getJSON("https://github.com/Kyrial/myWebsite/tree/main/xml/Experience.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+	const obj = JSON.parse(json);
+	console.log(obj.Temoignages);
+	console.log(obj.Temoignages.temoignage[0]);
+	console.log(obj.Temoignages.temoignage[0].resume);
+	
+});
+
+$.getJSON("./xml/Experience.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+	const obj = JSON.parse(json);
+	console.log(obj.Temoignages);
+	console.log(obj.Temoignages.temoignage[0]);
+	console.log(obj.Temoignages.temoignage[0].resume);
+	
+});
+
+
+function createDOMHierarchy() {
+  var sectionDiv = document.createElement('div');
+  sectionDiv.className = 'section px-3 px-lg-4 pt-5';
+  sectionDiv.id = 'testimonials2';
+
+  var containerDiv = document.createElement('div');
+  containerDiv.className = 'container-narrow2';
+
+  var textCenterDiv = document.createElement('div');
+  textCenterDiv.className = 'text-center mb-52';
+
+  var heading = document.createElement('h2');
+  heading.className = 'marker marker-center';
+  heading.textContent = 'Témoignages2';
+
+  textCenterDiv.appendChild(heading);
+  containerDiv.appendChild(textCenterDiv);
+  sectionDiv.appendChild(containerDiv);
+
+  // Ajoutez ici le code pour générer les lignes supplémentaires (rows)
+
+  return sectionDiv;
+}
+
+// Exemple d'utilisation :
+var hierarchy = createDOMHierarchy();
+var contentDiv = document.getElementById("content");
+//contentDiv.appendChild(hierarchy);
+</script>
+
+
 <!--
 <div class="section px-2 px-lg-4 pb-4 pt-5 mb-5" id="contact">
   <div class="container-narrow">
