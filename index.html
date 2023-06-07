@@ -666,7 +666,7 @@ function createDOMHierarchy() {
 	for (var element of json.Temoignages.temoignage){
 		var side =   'fade-left';
 		if(i%2==0)
-		  side =   'fade-right';
+		  side = 'fade-right';
 		else{
 			rowDiv = document.createElement('div');
 			sectionDiv.className = 'row';
@@ -682,6 +682,7 @@ function createDOMHierarchy() {
 				side);
 		rowDiv.appendChild(testimonialDiv1);
 		}
+		i++;
 	
 	});
 
