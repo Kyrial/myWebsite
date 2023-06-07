@@ -660,17 +660,19 @@ function createDOMHierarchy() {
     console.log(json); // this will show the info it in firebug console
 	//const obj = JSON.parse(json);
 	console.log(json.Temoignages);
-	console.log(json.Temoignages.temoignage[0]);
-	console.log(json.Temoignages.temoignage[0].resume);
+	//console.log(json.Temoignages.temoignage[0]);
+	//console.log(json.Temoignages.temoignage[0].resume);
 	var i = 1;
 	for (var element of json.Temoignages.temoignage){
 		var side ='fade-left';
-		if(i%2==0)
+		if(i%2==0){
 		  side = 'fade-right';
+		  }
 		else{
 			rowDiv = document.createElement('div');
 			sectionDiv.className = 'row';
-			containerDiv.appendChild(rowDiv);}
+			containerDiv.appendChild(rowDiv);
+		}
 		
 		console.log(element);
 		testimonialDiv1 = createTestimonialDiv(
