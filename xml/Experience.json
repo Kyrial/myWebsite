@@ -2,28 +2,39 @@
   "Temoignages": {
     "temoignage": [
       {
+        "resume": "Melvin a effectué son stage de deuxième année sous ma co-direction dans le cadre d’une collaboration avec un laboratoire d’écologie pour étudier la caractérisation de la beauté. Il a réussi à proposer un modèle de prédiction basé sur le lien entre beauté et fluence neuronale. Nous pensons que les résultats obtenus pourraient être valorisés par un article.\n Melvin Bardin a de très bonnes capacités à appréhender un sujet qu’il ne connait pas, il sait travailler en équipe et assez curieux pour la recherche. Pour toutes ces raisons, je recommande la candidature de Melvin Bardin sans aucune réserve.",
+        "nom": "William Puech",
+        "lieu": "LIRMM / Responsable du master IMAGINE",
+        "image": "",
+		"annee": "2022"
+      },
+      {
         "resume": "Melvin a été très impliqué dans son stage, montrant une motivation et un sérieux sans faille. Melvin a également porté un intérêt sincère pour la question biologique sous-jacente, lisant régulièrement des publications scientifiques de biologie et de psychologie, donc en dehors de sa spécialité. Il n’a jamais hésité à solliciter des discussions pour demander des éclaircissements sur les objectifs de son stage et pour discuter de ses résultats, de leur signification biologique. Ce comportement le démarque de bon nombre d’étudiants en informatique avec lesquels j’ai pu travailler précédemment.",
         "nom": "Julien Renoult",
         "lieu": "CNRS / Responsable de l’équipe de recherche E3Co",
-        "image": "images/testimonials/julien_2.png"
+        "image": "images/testimonials/julien_2.png",
+		"annee": "2022"
       },
       {
         "resume": "En plus de solides compétences techniques, Melvin m'a surtout impressionné par sa capacité à saisir rapidement des enjeux complexes de disciplines nouvelles pour lui.",
         "nom": "Nicolas Dibot",
         "lieu": "CNRS / Doctorant",
-        "image": "images/testimonials/nicolas_dibot.jpg"
+        "image": "images/testimonials/nicolas_dibot.jpg",
+		"annee": "2022"
       },
       {
         "resume": "Ses expériences ont toujours été menées avec rigueur ; son encadrement a été facilité grâce à sa grande écoute et à sa rapide compréhension des choses.",
         "nom": "Cédric Lopez",
         "lieu": "Emvista / Directeur de recherche",
-        "image": "images/testimonials/cedric_lopez.png"
+        "image": "images/testimonials/cedric_lopez.png",
+		"annee": "2021"
       },
       {
         "resume": "Melvin a été un étudiant très sérieux et très travailleur qui n’a pas hésité à s’investir dans des technologies qu’il ne connaissait pas.",
         "nom": "Pascal Poncelet",
         "lieu": "LIRMM / Professeur des universités",
-        "image": "images/testimonials/pascal_poncelet.png"
+        "image": "images/testimonials/pascal_poncelet.png",
+		"annee": "2020"
       }
     ]
   }
