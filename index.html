@@ -654,7 +654,7 @@ function createDOMHierarchy() {
   sectionDiv.appendChild(containerDiv);
 
   // Ajoutez ici le code pour générer les lignes supplémentaires (rows)
-  var rowDiv;
+  let rowDiv;
 
 	$.getJSON("./xml/Experience.json", function(json) {
     console.log(json); // this will show the info it in firebug console
@@ -670,8 +670,9 @@ function createDOMHierarchy() {
 		  }
 		else{
 			rowDiv = document.createElement('div');
-			sectionDiv.className = 'row';
+			rowDiv.className = 'row';
 			containerDiv.appendChild(rowDiv);
+			
 		}
 		
 		console.log(element);
