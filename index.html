@@ -577,7 +577,7 @@ $.getJSON("./xml/Experience.json", function(json) {
 	
 });*/
 
-function createTestimonialDiv(name, role, imageSrc, quote, delay, classSide) {
+function createTestimonialDiv(name, role, imageSrc, quote, years, delay, classSide) {
   var colDiv = document.createElement('div');
   colDiv.className = 'col-md-6 mb-5';
   colDiv.setAttribute('data-aos', classSide);
@@ -611,9 +611,14 @@ function createTestimonialDiv(name, role, imageSrc, quote, delay, classSide) {
   var roleDiv = document.createElement('div');
   roleDiv.className = 'text-small';
   roleDiv.textContent = role;
+  
+  var yearsDiv = document.createElement('div');
+  yearsDiv.className = 'text-small';
+  yearsDiv.textContent = years;
 
   innerDiv3.appendChild(nameDiv);
   innerDiv3.appendChild(roleDiv);
+  innerDiv3.appendChild(yearsDiv);
 
   var image = document.createElement('img');
   image.className = 'me-md-3 rounded';
@@ -681,6 +686,7 @@ function createDOMHierarchy() {
 				element.lieu,
 				element.image,
 				element.resume,
+				element.annee,
 				i*100,
 				side);
 		rowDiv.appendChild(testimonialDiv1);
