@@ -1,5 +1,5 @@
 
-function createDOMHierarchy() {
+export function createDOMHierarchy() {
   var sectionDiv = document.createElement('div');
   sectionDiv.className = 'section px-3 px-lg-4 pt-5';
   sectionDiv.id = 'testimonials';
