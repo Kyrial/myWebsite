@@ -1,4 +1,61 @@
 
+function createDOMHierarchy() {
+  var sectionDiv = document.createElement('div');
+  sectionDiv.className = 'section px-3 px-lg-4 pt-5';
+  sectionDiv.id = 'testimonials';
+
+  var containerDiv = document.createElement('div');
+  containerDiv.className = 'container-narrow';
+
+  var textCenterDiv = document.createElement('div');
+  textCenterDiv.className = 'text-center mb-5';
+
+  var heading = document.createElement('h2');
+  heading.className = 'marker marker-center';
+  heading.textContent = 'Témoignages';
+
+  textCenterDiv.appendChild(heading);
+  containerDiv.appendChild(textCenterDiv);
+  sectionDiv.appendChild(containerDiv);
+
+  // Ajoutez ici le code pour générer les lignes supplémentaires (rows)
+  let rowDiv;
+
+	$.getJSON("./xml/Experience.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+	//const obj = JSON.parse(json);
+	console.log(json.Temoignages);
+
+	let i = 1;
+	for (var element of json.Temoignages.temoignage){
+		let side ='fade-right';
+		if(i%2==0){
+		  side = 'fade-left';
+		  }
+		else{
+			rowDiv = document.createElement('div');
+			rowDiv.className = 'row';
+			containerDiv.appendChild(rowDiv);
+			
+		}
+		console.log(element);
+		testimonialDiv1 = createTestimonialDiv(
+				element.nom, 
+				element.lieu,
+				element.image,
+				element.resume,
+				element.annee,
+				i*100,
+				side);
+		rowDiv.appendChild(testimonialDiv1);
+		i++;
+		console.log(i);
+		}	
+	});
+  return sectionDiv;
+}
+
+
 /**
 creation de chaque temoignages
 **/
